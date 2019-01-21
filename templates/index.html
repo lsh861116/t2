@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="/static/js/jquery.min.js">
+    (function () {
+        alert("11111");
+    })
+</script>
+<body>
+<form action="/index/" method="post">
+    <input type="text" name="username">
+<input type="password" name="password">
+    <input type="submit" value="submit">
+</form>
+<h1>show</h1>
+<table border="1">
+    <thead>
+        <th>user</th>
+        <th>password</th>
+    </thead>
+    <tbody>
+        {% for line in data %}
+            <tr>
+                <td>{{ line.user }}</td>
+                <td>{{ line.pwd }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

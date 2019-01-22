@@ -77,8 +77,18 @@ WSGI_APPLICATION = 't2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+         #specify database engine
+        'ENGINE': 'django.db.backends.mysql',
+        # database name
+        'NAME': 't2',
+        # database username
+        'USER': 'root',
+        # corresponding password
+        'PASSWORD': '123456',
+        # HOST of the choosen database
+        'HOST': 'localhost',
+        # database port number (default value used here)
+        'PORT': '3306',
     }
 }
 

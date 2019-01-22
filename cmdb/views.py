@@ -5,7 +5,7 @@ from django.shortcuts import HttpResponse
 from django.shortcuts import render
 from cmdb import models
 from django.http import JsonResponse
-from django.http import r
+
 
 user_list = [
     {"user":"jack", "pwd":"abc"},

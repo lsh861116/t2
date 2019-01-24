@@ -80,7 +80,7 @@ DATABASES = {
          #specify database engine
         'ENGINE': 'django.db.backends.mysql',
         # database name
-        'NAME': 't2',
+        'NAME': 't2_1',
         # database username
         'USER': 'root',
         # corresponding password
@@ -143,3 +143,8 @@ SESSION_COOKIE_SECURE = False  # 是否Https传输cookie
 SESSION_COOKIE_HTTPONLY = True  # 是否Session的cookie只支持http传输
 SESSION_COOKIE_AGE = 600000  # Session的cookie失效日期（2周） 默认1209600秒
 SESSION_EXPIRE_AT_BROWSER_CLOSE =True  # 是否关闭浏览器使得Session过期
+
+MYSQL_HOST = 'localhost'
+MYSQL_DBNAME = 't2_1'
+MYSQL_USER = 'root'
+MYSQL_PASSWD = '123456'
